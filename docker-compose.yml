@@ -1,0 +1,23 @@
+services:
+  db:
+    container_name: shop-db
+    image: postgres
+    restart: always
+    ports:
+      - 5433:5432
+    environment:
+      POSTGRES_USER: admin
+      POSTGRES_PASSWORD: admin
+      POSTGRES_DB: shopdev
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+
+  adminer:
+    image: adminer
+    restart: always
+    ports:
+      - 8090:8080
+
+volumes:
+  pgdata:
+    driver: local
