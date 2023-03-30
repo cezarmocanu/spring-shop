@@ -1,7 +1,4 @@
-package com.cezarmocanu.shop.model.customerOrderItem;
-
-import com.cezarmocanu.shop.model.customerOrder.CustomerOrder;
-import com.cezarmocanu.shop.model.item.Item;
+package com.cezarmocanu.shop.model;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.FetchType;

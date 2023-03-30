@@ -15,19 +15,19 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.server.ResponseStatusException;
 
+import com.cezarmocanu.shop.dto.CreateItemDTO;
 import com.cezarmocanu.shop.mappers.ItemMapper;
-import com.cezarmocanu.shop.model.item.CreateItemDTO;
-import com.cezarmocanu.shop.model.item.Item;
+import com.cezarmocanu.shop.model.Item;
 import com.cezarmocanu.shop.repository.ItemRepository;
+
+import lombok.AllArgsConstructor;
 
 @RestController
 @RequestMapping("/v1/items")
+@AllArgsConstructor
 public class ItemController {
 
-    @Autowired
     private ItemRepository itemRepository;
-
-    @Autowired
     private ItemMapper itemMapper;
 
     @GetMapping

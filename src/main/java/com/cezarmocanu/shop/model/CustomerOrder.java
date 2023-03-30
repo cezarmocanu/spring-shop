@@ -1,5 +1,6 @@
-package com.cezarmocanu.shop.model.customer;
+package com.cezarmocanu.shop.model;
 
+import jakarta.annotation.Generated;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -8,10 +9,9 @@ import lombok.Builder;
 
 @Builder
 @Entity
-public class Customer {
+public class CustomerOrder {
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    private String firstName;
-    private String lastName;
 }

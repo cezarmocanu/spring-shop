@@ -1,4 +1,4 @@
-package com.cezarmocanu.shop.model.item;
+package com.cezarmocanu.shop.dto;
 
 import java.math.BigDecimal;
 
